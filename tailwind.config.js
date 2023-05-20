@@ -7,6 +7,10 @@ module.exports = {
     fontFamily: {
       'sans': ['Arial', 'sans-serif'],
       'mono': ['Lucida Console', 'Courier', 'monospace'],
+      montrealBold: ["montreal-bold"],
+      montrealMedium: ["montreal-medium"],
+      montrealRegular: ["montreal-regular"],
+      montrealLight: ["montreal-light"],
     },
     screens: {
       sm: "640px",
@@ -18,6 +22,13 @@ module.exports = {
     },
     extend: {
       colors: {
+        palette: {
+          blue: "#233D5B",
+          silver:"#99A1AC",
+          orange:"#F75C0F",
+          lightOrange:"#f87c3e",
+          white: "#FFF",
+        },
         'black': '#000',
         'white': '#FFF',
         'example-color': {
@@ -26,7 +37,9 @@ module.exports = {
           dark: '#ce8860',
         },
       }
+      
     },
+    
   },
   plugins: []
 }
