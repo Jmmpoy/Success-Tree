@@ -16,3 +16,8 @@
 body {
   @apply font-sans antialiased text-black bg-white;
 }
+
+img {
+   object-fit: cover;
+   
+}
