@@ -13,13 +13,9 @@ export default function Content() {
   const lineStyle =
     " carousel-textLine font-montrealRegular line  sm:text-xl  md:text-2xl";
   const lines = [
-    <>
-      Turn your vision into reality with our consulting firm's outstanding qualities,
-    </>,
-    <>
-      where innovation, strategy, and operational excellence converge to propel
-    </>,
-    <>your business to new heights.</>
+    "Turn your vision into reality with our consulting firm's outstanding qualities,",
+      "where innovation, strategy, and operational excellence converge to propel",
+    "your business to new heights."
   ];
 
   return (
