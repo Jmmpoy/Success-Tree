@@ -10,7 +10,7 @@ export default function Logo({ style }) {
       animate={{opacity:1,transition:{duration:.4,delay:1.7}}}
       >
       <Link href="/">
-        <img className="w-40" src="images/success-three-logo-black.png" alt="logo of the company Success Three " />
+        <img className="w-36 md:w-40" src="images/success-three-logo-black.png" alt="logo of the company Success Three " />
       </Link>
     </motion.div>
   );
