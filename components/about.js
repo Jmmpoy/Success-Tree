@@ -21,15 +21,15 @@ export default function About() {
     </>,
 
     <>
-      Nous avons une équipe de{" "}
+      Nous avons une équipe de
       <span className="text-palette-red">mécaniciens qualifiés</span> et
       expérimentés qui peuvent prendre en charge tous les types de réparations
       et entretiens automobiles, des petites réparations aux révisions
       complètes.
     </>,
     <>
-      Nous nous engageons à offrir{" "}
-      <span className="text-palette-red">un service de qualité</span>{" "}
+      Nous nous engageons à offrir
+      <span className="text-palette-red">un service de qualité</span>
       supérieure à des prix abordables pour satisfaire les besoins de nos
       clients. Contactez-nous dès maintenant pour discuter de vos besoins
       automobiles et découvrir comment nous pouvons vous aider à prendre soin de
@@ -66,7 +66,7 @@ export default function About() {
       <div className="flex flex-col md:grid md:grid-cols-2  py-16  relative md:py-24 lg:py-36 ">
         <div>
           <p className="text-palette-red font-montrealRegular">Our story</p>
-        <motion.h4 variants={listItemVariants} className={`${lineStyle} font-montrealMedium max-w-[280px] mt-4 md:w-[400px] md:mt-4`}>
+        <motion.h4 variants={listItemVariants} animate={inView ? "visible" : "hidden"} className={`${lineStyle} font-montrealMedium max-w-[280px] mt-4 md:w-[400px] md:mt-4`}>
           Tell the story of how your company came about
         </motion.h4>
         </div>
