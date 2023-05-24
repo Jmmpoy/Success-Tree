@@ -15,15 +15,12 @@ export default function Content() {
     " carousel-textLine font-montrealRegular line  sm:text-xl  md:text-2xl";
   const lines = [
     <>
-      Vous cherchez un{" "}
-      garage automobilede
-      confiance ?
+      Turn your vision into reality with our consulting firm's outstanding qualities,
     </>,
-    "Notre galerie d'images vous montre les raisons pour lesquelles",
     <>
-      nous sommesle choix idéal
-      pour prendre soin de votre voiture.
+      where innovation, strategy, and operational excellence converge to propel
     </>,
+    <>your business to new heights.</>
   ];
 
   return (

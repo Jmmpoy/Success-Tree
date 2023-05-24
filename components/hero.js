@@ -26,14 +26,12 @@ export default function Hero() {
   };
 
   const titleLines = [
-    " Des services de qualité",
-    "supérieure pour votre voiture",
+    "Unleash Success with Success Three",
   ];
   const textLines = [
-    "Chez AFM Motors, nous sommes fiers de fournir des services de",
-    "réparation automobile professionnels et fiables à nos clients, des",
-    "petites réparations aux révisions complètes, grâce à une équipe",
-    "de mécaniciens qualifiés et expérimentés.",
+    "Transformez votre vision en réalité avec notre expertise en consulting,",
+    "où l'innovation, la stratégie et l'excellence opérationnelle se rencontrent", 
+    "pour propulser votre entreprise vers de nouveaux sommets."
   ];
 
   const { scrollYProgress } = useScroll();
