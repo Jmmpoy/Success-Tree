@@ -28,7 +28,7 @@ export default function Content() {
       <Container extraClasses="relative bg-palette-blue rounded-b-[2rem] h-full">
         <main className="">
         <div className=" w-12/12 relative">
-              <h3 className="text-white text-center">Our vision</h3>
+              <h3 className="text-white text-center text-xl font-bold">Our vision</h3>
               <motion.div>
                 {lines.map((line, index) => {
                   return (
