@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className=" bg-palette-white text-black">
       <Container>
-        <div className=" border-opacity-10 py-4">
+        <div className=" border-t border-balck py-4">
           <div className="flex flex-wrap text-[10px]">
             <div className="flex space-x-1 mb-1 md:mb-0">
               <a

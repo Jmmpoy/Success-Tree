@@ -26,14 +26,10 @@ export default function Hero() {
   };
 
   const titleLines = [
-    " Des services de qualité",
-    "supérieure pour votre voiture",
+    "Unleash Success with Success Three",
   ];
   const textLines = [
-    "Chez AFM Motors, nous sommes fiers de fournir des services de",
-    "réparation automobile professionnels et fiables à nos clients, des",
-    "petites réparations aux révisions complètes, grâce à une équipe",
-    "de mécaniciens qualifiés et expérimentés.",
+    "Turn your vision into reality with our consulting firm's outstanding qualities,", "where innovation, strategy, and operational excellence converge to propel", "your business to new heights."
   ];
 
   const { scrollYProgress } = useScroll();
@@ -42,7 +38,7 @@ export default function Hero() {
   return (
     <div className="relative h-screen">
       <Container extraClasses="Hero-Container relative bg-palette-blue rounded-b-[2rem]">
-        <main className="hero translate-y-[-50px] h-screen sm:h-screen flex flex-col justify-center">
+        <main className="hero translate-y-[-50px] h-screen sm:h-screen flex flex-col justify-center" id="hero">
           <div className=" relative translate-y-[80px]">
             <div className=" hero-container w-12/12 relative">
               <motion.div className="title-container">
@@ -108,13 +104,13 @@ export default function Hero() {
                 whileHover={{ scale: 1.1 }} // Scale the element on hover
                 className=" text-black  absolute cursor-pointer    text-opacity-100 bg-white bg-opacity-100 font-medium rounded-[30px] text-sm h-[48px] w-[150px] sm:w-40 sm:text-lg  px-5 py-2.5 mr-2 mb-2  hover:transition duration-100 ease-in-out"
               >
-                <div className="flex justify-between">
-                  <Link to="contact" smooth={true} duration={800}>
+                <div className="flex justify-between w-auto">
+                  <Link to="apropos" smooth={true} duration={800}>
                     Find More
                   </Link>
                   <svg
                     className="self-center ml-2"
-                    width="21"
+                    width="20"
                     height="12"
                     viewBox="0 0 21 12"
                     fill="none"
