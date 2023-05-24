@@ -23,7 +23,7 @@ module.exports = {
     extend: {
       colors: {
         palette: {
-          blue: "#233D5B",
+          blue: "#010C80",
           silver:"#99A1AC",
           orange:"#F75C0F",
           lightOrange:"#f87c3e",

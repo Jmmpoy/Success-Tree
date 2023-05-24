@@ -11,6 +11,7 @@ import About from '@/components/about'
 import Content from '@/components/content'
 import Contact from '@/components/contact'
 import Services from '@/components/services'
+import ContentWithCTA from '@/components/contentWithCTA'
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <About/>
         <Content/>
         <Services/>
+        <ContentWithCTA/>
         <Contact/>
       </LazyMotion>
      
