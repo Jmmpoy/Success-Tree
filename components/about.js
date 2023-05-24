@@ -15,21 +15,21 @@ export default function About() {
     <>
       <span className="text-palette-red">Chez AFM Motors</span>, nous sommes
       passionnés par les voitures et nous sommes fiers de fournir des services
-      de réparation automobile professionnels et fiables à nos clients. "Nous
+      de réparation automobile professionnels et fiables à nos clients. Nous
       sommes une entreprise familiale avec une longue histoire de service à la
       communauté locale.
     </>,
 
     <>
-      Nous avons une équipe de{" "}
+      Nous avons une équipe de
       <span className="text-palette-red">mécaniciens qualifiés</span> et
       expérimentés qui peuvent prendre en charge tous les types de réparations
-      et d'entretiens automobiles, des petites réparations aux révisions
+      et entretiens automobiles, des petites réparations aux révisions
       complètes.
     </>,
     <>
-      Nous nous engageons à offrir{" "}
-      <span className="text-palette-red">un service de qualité</span>{" "}
+      Nous nous engageons à offrir
+      <span className="text-palette-red">un service de qualité</span>
       supérieure à des prix abordables pour satisfaire les besoins de nos
       clients. Contactez-nous dès maintenant pour discuter de vos besoins
       automobiles et découvrir comment nous pouvons vous aider à prendre soin de
@@ -64,9 +64,9 @@ export default function About() {
   return (
     <Container extraClasses="About-Container" id="apropos">
       <div className="flex flex-col md:grid md:grid-cols-2  py-16  relative md:py-24 lg:py-36 ">
-        <div className="">
+        <div>
           <p className="text-palette-red font-montrealRegular">Our story</p>
-        <motion.h4 variants={listItemVariants} className={`${lineStyle} font-montrealMedium max-w-[280px] mt-4 md:w-[400px] md:mt-4`}>
+        <motion.h4 variants={listItemVariants} animate={inView ? "visible" : "hidden"} className={`${lineStyle} font-montrealMedium max-w-[280px] mt-4 md:w-[400px] md:mt-4`}>
           Tell the story of how your company came about
         </motion.h4>
         </div>

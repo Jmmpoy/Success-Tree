@@ -2,7 +2,7 @@ import React from "react";
 import Container from "./container";
 import { motion, m } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import heroImage from "../public/images/hero-image.webp";
+import sectionImage from "../public/images/vision-image.jpg";
 import Link from "next/link";
 
 export default function Content() {
@@ -24,48 +24,66 @@ export default function Content() {
   ];
 
   return (
-    <div className="relative h-[50vh] overflow-hidden flex flex-col justify-center">
+    <div ref={ref} className="relative h-[50vh] overflow-hidden flex flex-col justify-center">
       <Container extraClasses="relative bg-palette-blue rounded-b-[2rem] h-full">
-        <main className="">
-        <div className=" w-12/12 relative">
-              <h3 className="text-white text-center text-xl font-bold">Our vision</h3>
-              <motion.div>
-                {lines.map((line, index) => {
-                  return (
-                    <m.div
-                      className="first-title-line-container overflow-hidden"
-                      key={index}
-                    >
-                      <motion.p
-                        initial={{ y: 150 }}
-                        animate={{ y: 0 }}
-                        transition={{
+        <main >
+          <div className=" w-12/12 relative">
+            <motion.div>
+              {lines.map((line, index) => {
+                return (
+                  <m.div
+                    className="first-title-line-container overflow-hidden"
+                    key={index}
+                  >
+                    <motion.p
+                      initial={{ y: 150 }}
+                      animate={inView ? {
+                        y: 0, transition: {
                           duration: 0.8,
                           delay: 0.7,
                           ease: [0.08, 0.82, 0.17, 1],
-                        }}
-                        className="text-base sm:text-xl font-montrealMedium text-center text-white  text-opacity-100 mb-0  "
-                      >
-                        {line}
-                      </motion.p>
-                    </m.div>
-                  );
-                })}
-              </motion.div>
-            </div>
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{
-                opacity: 1,
-                transition: { duration: 0.5, delay: 1.3, ease: "easeInOut" },
-              }}
-              className="flex justify-center mt-8"
-            >
+                        }
+                      } : {}}
+                      className="text-base sm:text-xl font-montrealMedium text-center text-white  text-opacity-100 mb-0  "
+                    >
+                      {line}
+                    </motion.p>
+                  </m.div>
+                );
+              })}
             </motion.div>
+          </div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={inView ? { opacity: 1, transition: { duration: 0.5, delay: 1.3, ease: "easeInOut" } } : {}}
+            className="flex justify-center mt-8"
+          >
+            <motion.button
+              type="button"
+              whileHover={{ scale: 1.1 }} // Scale the element on hover
+              className=" text-black  absolute cursor-pointer    text-opacity-100 bg-white bg-opacity-100 font-medium rounded-[30px] text-base h-[40px] w-[100px] sm:w-[90px] sm:text-base  px-5 py-2.5 mr-2 mb-2  hover:transition duration-200 ease-in-out"
+            >
+              <div className="flex justify-center">
+                <Link href="" to="contact" smooth={true} duration={800}>
+                  Cta
+                </Link>
+
+              </div>
+            </motion.button>
+          </motion.div>
         </main>
       </Container>
 
       <motion.div
+        initial={{ opacity: 0 }}
+        animate={inView ? {
+          opacity: 1, transition: {
+            duration: 0.8,
+            ease: "easeInOut",
+          }
+        } : {}}
+
+
         style={{
           position: "absolute",
           top: 0,
@@ -77,7 +95,7 @@ export default function Content() {
       >
         <img
           style={{ minWidth: "100%", height: "100%" }}
-          src={heroImage.src}
+          src={sectionImage.src}
           alt="bg"
         />
         <div className="absolute top-0 w-screen h-screen bg-black opacity-70" />

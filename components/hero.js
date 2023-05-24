@@ -131,6 +131,13 @@ export default function Hero() {
       </Container>
 
       <motion.div
+
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{
+          duration: 0.8,
+          ease: "easeInOut",
+        }}
         style={{
           position: "absolute",
           top: 0,
@@ -140,13 +147,13 @@ export default function Hero() {
           zIndex: -1,
         }}
       >
-        
+
         <img
           style={{ minWidth: "100%", height: "100%" }}
           src={heroImage.src}
           alt="bg"
         />
-        <div className="absolute top-0 w-screen h-screen bg-black opacity-70"/>
+        <div className="absolute top-0 w-screen h-screen bg-black opacity-70" />
 
       </motion.div>
     </div>
