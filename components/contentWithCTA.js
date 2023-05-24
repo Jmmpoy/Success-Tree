@@ -3,7 +3,7 @@ import Container from "./container";
 import { motion, m } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import sectionImage from "../public/images/vision-image.jpg";
-import Link from "next/link";
+import {Link} from "react-scroll";
 
 export default function ContentWithCTA() {
   const [ref, inView] = useInView({
@@ -64,7 +64,7 @@ export default function ContentWithCTA() {
               className=" text-black  absolute cursor-pointer    text-opacity-100 bg-white bg-opacity-100 font-medium rounded-[30px] text-base h-auto w-auto sm:text-base  px-5 py-2.5 mr-2 mb-2  hover:transition duration-200 ease-in-out "
             >
               <div className="flex justify-center w-20">
-                <Link href="#contact" to="contact" smooth={true} duration={800}>
+                <Link to="contact" smooth={true} duration={800}>
                   Contact us
                 </Link>
               </div>

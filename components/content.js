@@ -2,8 +2,7 @@ import React from "react";
 import Container from "./container";
 import { motion, m } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import sectionImage from "../public/images/vision-image.jpg";
-import Link from "next/link";
+import sectionImage from "../public/images/services-image.jpg";
 
 export default function Content() {
   const [ref, inView] = useInView({
