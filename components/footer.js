@@ -1,5 +1,6 @@
 import React from "react";
 import Container from "./container";
+import Link from "next/link"
 
 export default function Footer() {
   return (
@@ -7,7 +8,7 @@ export default function Footer() {
       <Container>
         <div className=" border-t border-balck py-4">
           <div className="flex flex-wrap text-[10px]">
-            <div className="flex space-x-1 mb-1 md:mb-0">
+            <div className="space-x-4 mb-1 md:mb-0">
               <a
                 href="https://www.350lab.com"
                 target="_blank"
@@ -16,6 +17,7 @@ export default function Footer() {
               >
                 Maintained by 350lab Studio
               </a>
+              <Link href="/legal">Legal notice</Link>
             </div>
           </div>
         </div>

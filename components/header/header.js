@@ -18,7 +18,7 @@ export default function Header() {
   const [activeIndex, setActiveIndex] = useState(null);
   const [open, setOpen] = useCycle(false, true);
   const menuItems = [
-    { route: "À Propos", url: "apropos" },
+    { route: "About", url: "apropos" },
     { route: "Services", url: "services" },
     { route: "Contact", url: "contact" },
   ];
