@@ -20,7 +20,6 @@ export default function Header() {
   const menuItems = [
     { route: "À Propos", url: "apropos" },
     { route: "Services", url: "services" },
-    { route: "Clients", url: "clients" },
     { route: "Contact", url: "contact" },
   ];
 

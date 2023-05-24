@@ -34,7 +34,7 @@ export default function Navigation({ items, setOpen }) {
               onClick={setOpen}
             >
               <Link to={url} smooth={true} duration={800} offset={-100}>
-                <span className="relative hover:text-gray-500 focus:text-gray-500 text-base">
+                <span className="relative hover:text-palette-red focus:text-gray-500 text-base hover:cursor-pointer">
                   {isActive && (
                     <motion.span
                       layoutId="shadow"
