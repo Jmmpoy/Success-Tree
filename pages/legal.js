@@ -69,7 +69,7 @@ export default function LegalNotice() {
               <h1 className="font-bold text-2xl md:text-3xl xl:text-4xl pt-40 mb-20">Legal Notice</h1>
               <div className="content max-w-3xl mb-4">
                 {legal.map(({title, text, subtext}, i) => (
-                    <div className="" key={i}>
+                    <div className="mb-8" key={i}>
                         <h3 className='text-dark text-2xl'>{title}</h3>
                         <p className="text-dark">{text}</p>
                         {subtext && <p className="text-dark">{subtext}</p>}
