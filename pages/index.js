@@ -10,6 +10,7 @@ import Hero from '@/components/hero'
 import About from '@/components/about'
 import Content from '@/components/content'
 import Contact from '@/components/contact'
+import Services from '@/components/services'
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <Hero/>
         <About/>
         <Content/>
+        <Services/>
         <Contact/>
       </LazyMotion>
      
