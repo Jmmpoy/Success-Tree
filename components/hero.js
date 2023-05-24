@@ -29,9 +29,7 @@ export default function Hero() {
     "Unleash Success with Success Three",
   ];
   const textLines = [
-    "Transformez votre vision en réalité avec notre expertise en consulting,",
-    "où l'innovation, la stratégie et l'excellence opérationnelle se rencontrent", 
-    "pour propulser votre entreprise vers de nouveaux sommets."
+    "Turn your vision into reality with our consulting firm's outstanding qualities,", "where innovation, strategy, and operational excellence converge to propel", "your business to new heights."
   ];
 
   const { scrollYProgress } = useScroll();
@@ -106,13 +104,13 @@ export default function Hero() {
                 whileHover={{ scale: 1.1 }} // Scale the element on hover
                 className=" text-black  absolute cursor-pointer    text-opacity-100 bg-white bg-opacity-100 font-medium rounded-[30px] text-sm h-[48px] w-[150px] sm:w-40 sm:text-lg  px-5 py-2.5 mr-2 mb-2  hover:transition duration-100 ease-in-out"
               >
-                <div className="flex justify-between">
+                <div className="flex justify-between w-auto">
                   <Link to="contact" smooth={true} duration={800}>
                     Find More
                   </Link>
                   <svg
                     className="self-center ml-2"
-                    width="21"
+                    width="20"
                     height="12"
                     viewBox="0 0 21 12"
                     fill="none"
