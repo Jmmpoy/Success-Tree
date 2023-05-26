@@ -40,8 +40,8 @@ export default function Contact() {
         aria-labelledby="footer-heading"
         id="contact"
       >
-         <p className="text-palette-red font-montrealRegular">Contact</p>
-        <div className="mt-12 contact-row grid grid-cols-1 row-span-2 gap-20 md:grid-cols-3  col-span-2   sm:gap-y-14 w-full">
+         <p className="text-palette-blue font-montrealRegular">Contact</p>
+        <div className="mt-12 contact-row grid grid-cols-1 row-span-2 gap-10 md:grid-cols-3  col-span-2   md:gap-20-10 items-center w-full">
           {items.map(({ title, text, subtext, icon,link }, i) => (
             <motion.div 
                 ref={ref}
@@ -49,10 +49,10 @@ export default function Contact() {
                 animate={inView ? {opacity: 1, y: 0} : {}}
                 transition={{ duration: 0.3, delay: 0.4, ease: "easeOut" }}
                 key={i} 
-                className="w-full xsl:w-6/12 text-white flex flex-col "
+                className="w-full xsl:w-6/12 text-white flex flex-col items-center md:items-start"
               >
                 {icon}
-              {title && <h4 className="text-2xl font-montrealMedium mt-4 mb-3 text-black">
+              {title && <h4 className="text-2xl font-montrealMedium mt-4 mb-3 text-black ">
                 {title}
               </h4>}
               {text && <p className="font-montrealRegular mt-1 text-black  xl:text-md ">{text}</p>}
